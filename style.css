@@ -1,12 +1,12 @@
 @font-face {
     font-family: 'Cocogoose';
     src: url(./asset/fonts/Cocogoose.ttf);
-
 }
 
 :root{
     --background-btn: #fd53bf;
     --hero-text: rgb(255, 255, 255);
+    --section-text: rgb(120, 120, 120);
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -34,6 +34,14 @@ body{
     font-family: Cocogoose;
     font-size: 1.8em;
     color: var(--hero-text);
+    display: flex;
+    align-items: center;
+}
+
+.nav__logo-img{
+    height: 40px;
+    width: 100%;
+    margin-right: 0.5em;
 }
 
 .nav__item-right button{
@@ -107,7 +115,7 @@ justify-content: center;
 margin: 100px 0 150px 0;
 }
 
-.main__section00{
+.main__section00, .main__section01{
     display: flex;
     height: 450px;
     background: rgb(255, 255, 255);
@@ -116,12 +124,177 @@ margin: 100px 0 150px 0;
     box-shadow: 0px 0px 20px #0000001c;
 }
 
-.main__section-left00{
+.main__section-left00, .main__section-right01{
     width: 50%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.section__left-title, .section__right-title{
+    font-size: 2.2em;
+    padding: 0 20%;
+    margin-bottom: 0;
+    font-family: 'Raleway', sans-serif;
+}
+.section__left-text, .section__right-text{
+    font-size: 1.1em;
+    padding: 0 20%;
+    color: var(--section-text);
+    font-family: 'Raleway', sans-serif;
 }
 
-.main__section-right00{
+.main__section-right00, .main__section-left01{
     width: 50%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.main__section-left01 img{
+    height: 80%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.main__section-right00  img{
+    height: 80%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.footer{
+    height: 450px;
+    background: #00252f;
+}
+
+.footer__box{
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+.box__absolute{
+    height: 150px;
+    width: 40%;
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 0px 20px #0000001c;
+    border-radius: 0.7em;
+    position: absolute;
+    top: -5em;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.box__footer-title{
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.footer__content{
+    height: 200px;
+margin: 10% 5em 0 5em;
+display: flex;
+}
+
+
+.box1{
+    height: 100%;
+    width: 25%;
+    display: flex;
+justify-content: center;
+    flex-direction: column;
+}
+
+.footer__logo{
+    display: flex;
+    align-items: center;
+}
+
+.footer__location, .footer__phone, .footer__email{
+    display: flex;
+    align-items: center;
+    color: var(--hero-text);
+}
+
+.location__infos, .phone__infos, .email__infos{
+    margin: 0.3em;
+}
+
+.location__img, .phone__img, .email__img{
+    height: 0.9em;
+    width: 0.9em;
+    margin-right: 0.7em;
+}
+
+.logo__img{
+    height: 40px;
+    width: 40px;
+    margin-right: 0.4em;
+}
+
+.logo__title{
+    font-size: 24px;
+    font-family: Cocogoose;
+    color: var(--hero-text);
+}
+
+.footer__links00, .footer__links01{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__links00 li , .footer__links01 li{
+    list-style: none;
+    margin: 1em;
+    font-family: 'Raleway', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: var(--hero-text);
+}
+
+.footer__social{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+.fa {
+    font-size: 30px;
+    width: 20px;
+    height: 20px;
+    text-decoration: none;
+    border-radius: 50px;
+text-align: center;
+  }
+  
+  .fa:hover {
+      color: #fd53bf;
+  }
+  
+  .fa-facebook {
+    color: white;
+  }
+
+  .fa-twitter {
+    color: white;
+  }
+
+  .fa-instagram {
+    color: white;
+  }
+  
+  .reserved{
+    text-align: center;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.7em;
+  }
+
